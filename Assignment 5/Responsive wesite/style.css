@@ -90,13 +90,8 @@ p {
     width: 50%;
   }
 
-  .medium-view {
-    padding-top: 45px;
-    display: block;
-  }
-
   .smaller-view {
-    display: none;
+    display: block;
   }
 }
 
@@ -125,12 +120,9 @@ p {
     font-size: 18px;
     padding: 19px 56px;
   }
-  .larger-view {
-    display: block;
-  }
-  .medium-view,
+  
   .smaller-view {
-    display: none;
+    display: block;
   }
 }
 
@@ -213,12 +205,8 @@ a {
     width: 50%;
   }
 
-  .medium-view {
-    display: block;
-  }
-
   .smaller-view {
-    display: none;
+    display: block;
   }
 }
 
@@ -253,12 +241,8 @@ a {
     line-height: 140.62%;
    }
   
-  .larger-view {
-    display: block;
-  }
-  .medium-view,
   .smaller-view {
-    display: none;
+    display: block;
   }
 }
 
@@ -339,7 +323,6 @@ h3 {
   border-radius: 5px;
   border:  #798BFE;
   background: #798BFE;
-  
 }
 
 /*Upcomng traing - Event 2*/
@@ -487,6 +470,8 @@ h3 {
   border-radius: 5px;
   border:  #798BFE;
   background: #798BFE;
+  margin-bottom: 60px;
+  
 }
 
 
@@ -562,9 +547,244 @@ h3 {
     line-height: 20px;
     margin: 0 0 24px;
   }
+}
 
-  
+/* Footer */
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
+}
 
-  
+.footer-main {
+  padding-top: 22px;
+  background-color: navy;
+}
+
+.footer {
+  width: 100%;
+  padding:0 20px;
+  background-color:olivedrab;
+}
+
+.footer-top span {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.solutions {
+  float: left;
+  background-color: orange;
+  border-bottom: 1px solid black;
+  padding: 9px 0;
+}
+
+.platform {
+  float: left;
+  background-color: palegreen;
+  border-bottom: 1px solid black;
+  padding: 9px 0;
+}
+
+.company {
+  float: left;
+  background-color:white;
+  border-bottom: 1px solid black;
+  padding: 9px 0;
+}
+
+.resources {
+  float: left;
+  background-color: palevioletred;
+  border-bottom: 1px solid black;
+  padding: 9px 0;
+}
+
+.support {
+  float: left;
+  background-color: powderblue;
+  border-bottom: 1px solid black;
+  padding: 9px 0;
+}
+
+.social {
+  float: left;
+  background-color: saddlebrown;
+  border-bottom: 1px solid black;
+  padding: 9px 0;
+}
+
+.support {
+  float: left;
+  background-color: darkturquoise;
+  border-bottom: 1px solid black;
+  padding: 9px 0;
+}
+
+/* Dropdown */
+.top-text {
+	float: left;
+}
+
+.btn-area {
+	background-color: transparent;
+	cursor: pointer;
+	border: transparent;
+	}
+
+.menu-area {
+	position: relative;
+  display: inline-block;
+  /* padding-left: 270px; */
+}
+
+/* .solutions .menu-area {
+	padding-left: 279px;
+}
+
+.platform .menu-area {
+	padding-left: 284px;
+}
+
+.company .menu-area {
+	padding-left: 278px;
+}
+
+.resources .menu-area {
+	padding-left: 271px;
+} */
+
+.menu {
+	display: none;
+	position: absolute;
+	background-color: white;     /*YO DEFAULT BLACK AAIRAACHHA CHANGE GARNAI MILDAINA*/   
+	min-width: 160px;
+	z-index: 1;         /*dropdown lai bottom agadi leraauchha*/
+	right: 0;           /*dropdown lai left ra right align garchha*/
+}
+
+.menu a {
+	color:white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	transition: .9s;
+}
+
+.menu a:hover {
+	background-color: red;
+	color: #fff;
+}
+
+.menu-area:hover .menu{
+	display: block;	
+}
+
+.footer-bottom {
+  font-size: 10px;
+  line-height: 28px;
+  background-color: silver;
+  padding:12px 0 16px;
+}
+
+.solutions,
+  .platform, .resources, .support, .social, .company {
+    width: 100%;
+  }
+
+/*For tablet*/
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .top-text span{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .solutions,
+  .platform, .resources, .support, .social, .company{
+    width: 33.3%;
+  }
+
+  .footer-main {
+    padding-top: 40px;
+    background-color: navy;
+  }
+
+  .footer-bottom span {
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  .menu-area:hover .menu{
+    display: none;	
+  }
+
+  .btn-area {
+    display: none;
+    }
+}
+
+/*For laptop*/
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .top-text span{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .solutions,
+  .platform, .resources, .support, .social, .company{
+    width: 20%;
+  }
+
+  .footer-main {
+    padding-top: 40px;
+    background-color: navy;
+  }
+
+  .footer-bottom span {
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  .menu-area:hover .menu{
+    display: none;	
+  }
+
+  .btn-area {
+    display: none;
+    }
+
+    .social {
+      width: 50%;
+      float: right;
+      background-color: saddlebrown;
+      border-bottom: 1px solid black;
+      padding:14px 0 16px;
+      text-align: right;
+    }
+    
+    .footer-bottom {
+      float: left;
+      width: 50%;
+      font-size: 12px;
+      line-height: 28px;
+      background-color: silver;
+      padding:14px 0 16px;
+    }
+
   
 }
