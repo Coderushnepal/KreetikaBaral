@@ -8,6 +8,118 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Header*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100% ;
+  margin : 0 auto;
+  padding : 0 20px;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.clearfix:after {
+  content: " ";
+  display:table;
+  clear: both;
+}
+
+header {
+  margin: 20px 0px;
+ 
+}
+
+/*Navigation bar */
+nav {
+  display: none;
+}
+
+nav ul {
+  padding: 10px 0px;
+}
+nav ul li {
+  float: left;
+  text-decoration: none;
+}
+nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+.login-btn {
+  background: linear-gradient(90deg, #3ae4df 0%, #7a88ff 104.29%);
+  border-radius: 5px;
+  border-color: #7a88ff;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+}
+
+.logo img {
+  padding-top: 10px;
+}
+
+/*Hamberger menu */
+.hamburger {
+  display: block;
+}
+.hamburger div {
+  width: 25px;
+  height: 5px;
+  margin: 5px;
+  background-color: black;
+}
+
+/*For Tablet*/
+@media (min-width: 994px) {
+   .main {
+      max-width: 994px;
+  }
+
+ 
+  nav,
+  .login-btn
+  {
+      display: none;
+  }
+
+} 
+
+/*For Laptop*/
+@media (min-width: 1200px) {
+  body {
+      font-size: 16px;
+  }
+  .main {
+
+      max-width: 1140px;
+  }
+
+  nav,
+  .login-btn {
+      display: block;
+  }
+
+  .hamburger {
+      display: none;
+  }
+}   
+
 /*Intro Content*/
 .clearfix:after{
     content: '';
@@ -135,33 +247,28 @@ p {
 
 .director-msg {
   padding-top: 50px;
-  background-color: red;
 }
 
 .msg {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  background-color: yellow;
 }
 
 h2 {
   font-size: 26px;
   line-height: 36px;
-  background-color: green;
 }
 
 .director-img-left {
   width: 100%;
   float: left;
   padding: 40px 28px 39.8px 27px;
-  background-color: purple;
 }
 
 .director-content-right {
   width: 100%;
   float: right;
-  background-color:brown;
 }
 
 .director-img-left img{
@@ -171,21 +278,18 @@ width: 100%;
 h5 {
   font-size: 14px;
   line-height: 140.62%;
-  background-color: pink;
-  
 }
 
 .director-content-right p {
   font-size: 12px;
   line-height: 140.62%;
   margin:12px 0 20px;
-  background-color: lime;
+  color: grey;
 }
 
 a {
   font-size: 12px;
   line-height: 140.62%;
-  background-color: black;
 }
 
 /*For tablet*/
@@ -254,13 +358,11 @@ a {
 }
 
 .upcoming-training {
-  background-color: grey;
   padding-top: 60px;
 }
 
 .training {
   width: 100%;
-  background-color: lavender;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -268,25 +370,21 @@ a {
 h3 {
   font-size: 26px;
   line-height: 42px;
-  background-color: lightcoral;
   margin: 0 0 44px;
 }
 
 .event {
   width: 100%;
-  background-color: orange;
 }
 
 /*Upcomng traing - Event 1*/
 .event1 {
   float: left;
   width: 100%;
-  background-color: purple;
 }
 
 .event1-img {
   width: 100%;
-  background-color: maroon;
 }
 
 .event1-img img {
@@ -295,25 +393,18 @@ h3 {
 
 .event-msg {
   width: 100%;
-  float
-}
-
-.event1-msg {
-  background-color: white;
 }
 
 .event1-msg h4 {
   font-size: 16px;
   line-height: 28px;
   margin: 20px 0 16px;
-  background-color: green;
 }
 
 .event1-msg p {
   font-size: 12px;
   line-height: 17px;
   margin: 0 0 20px;
-  background-color: rosybrown;
 }
 
 .btn-event {
@@ -330,12 +421,10 @@ h3 {
   margin: 36px 0 0;
   float: left;
   width: 100%;
-  background-color: purple;
 }
 
 .event2-img {
   width: 100%;
-  background-color: maroon;
 }
 
 .event2-img img {
@@ -344,25 +433,18 @@ h3 {
 
 .event-msg {
   width: 100%;
-  float
-}
-
-.event2-msg {
-  background-color: white;
 }
 
 .event2-msg h4 {
   font-size: 16px;
   line-height: 28px;
   margin: 20px 0 16px;
-  background-color: green;
 }
 
 .event2-msg p {
   font-size: 12px;
   line-height: 17px;
   margin: 0 0 20px;
-  background-color: rosybrown;
 }
 
 .btn-event {
@@ -379,12 +461,10 @@ h3 {
   margin: 36px 0 0;
   float: left;
   width: 100%;
-  background-color: purple;
 }
 
 .event3-img {
   width: 100%;
-  background-color: maroon;
 }
 
 .event3-img img {
@@ -393,25 +473,18 @@ h3 {
 
 .event-msg {
   width: 100%;
-  float
-}
-
-.event3-msg {
-  background-color: white;
 }
 
 .event3-msg h4 {
   font-size: 16px;
   line-height: 28px;
   margin: 20px 0 16px;
-  background-color: green;
 }
 
 .event3-msg p {
   font-size: 12px;
   line-height: 17px;
   margin: 0 0 20px;
-  background-color: rosybrown;
 }
 
 .btn-event {
@@ -428,12 +501,10 @@ h3 {
   margin: 36px 0 0;
   float: left;
   width: 100%;
-  background-color: purple;
 }
 
 .event4-img {
   width: 100%;
-  background-color: maroon;
 }
 
 .event4-img img {
@@ -442,25 +513,18 @@ h3 {
 
 .event-msg {
   width: 100%;
-  float
-}
-
-.event4-msg {
-  background-color: white;
 }
 
 .event4-msg h4 {
   font-size: 16px;
   line-height: 28px;
   margin: 20px 0 16px;
-  background-color: green;
 }
 
 .event4-msg p {
   font-size: 12px;
   line-height: 17px;
   margin: 0 0 20px;
-  background-color: rosybrown;
 }
 
 .btn-event {
@@ -558,13 +622,12 @@ h3 {
 
 .footer-main {
   padding-top: 22px;
-  background-color: navy;
+  background-color: #FDFFF9;
 }
 
 .footer {
   width: 100%;
   padding:0 20px;
-  background-color:olivedrab;
 }
 
 .footer-top span {
@@ -574,58 +637,49 @@ h3 {
 
 .solutions {
   float: left;
-  background-color: orange;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 9px 0;
 }
 
 .platform {
   float: left;
-  background-color: palegreen;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 9px 0;
 }
 
 .company {
   float: left;
-  background-color:white;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 9px 0;
 }
 
 .resources {
   float: left;
-  background-color: palevioletred;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 9px 0;
 }
 
 .support {
   float: left;
-  background-color: powderblue;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 9px 0;
 }
 
 .social {
   float: left;
-  background-color: saddlebrown;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 9px 0;
 }
 
 .support {
   float: left;
-  background-color: darkturquoise;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   padding: 9px 0;
 }
 
 /* Dropdown */
 .top-text  {
   float: left;
-  background-color: deeppink;
-  
 }
 
 .btn-area {
@@ -670,7 +724,6 @@ h3 {
 .footer-bottom {
   font-size: 10px;
   line-height: 28px;
-  background-color: silver;
   padding:12px 0 16px;
 }
 
@@ -689,24 +742,31 @@ h3 {
   .top-text span{
     font-size: 18px;
     line-height: 28px;
+    padding-left: 30px;
   }
 
-  .solutions,
+    .solutions,
   .platform, .resources, .support, .social, .company{
     width: 33.3%;
   }
 
-  .footer-main {
+  .social {
+    height: 194px;
+  }
+
+ .footer-main {
     padding-top: 40px;
-    background-color: navy;
   }
 
   .footer-bottom span {
+    
     font-size: 12px;
     line-height: 28px;
   }
 
   .footer-bottom {
+    width: 100%;
+    float: left;
     font-size: 12px;
     line-height: 28px;
   }
@@ -715,28 +775,41 @@ h3 {
     display: none;
     }
   
-  .menu-area {
-     float:left;
+    .menu-area {
+     
+      padding: 12px;
+      float: left;
       position: unset;
-      display: block;
-      /* padding-left: 270px; */
-    }
+      display: inline-block;
+      }
     
     .menu {
-      padding-top: 20px;
+      margin: 0;
       display: block;
       position: unset;
+      background-color: white;
       min-width: 160px;
-      z-index: unset;         /*dropdown lai bottom agadi leraauchha*/
-      right: unset;           
+      z-index: unset;
+      
     }
-
-    .menu-area:hover .menu{
-      display: block;	
+    
+    .menu a {
+      color: black;
+      background: #FDFFF9;
+      padding: 4px 16px;
+      text-decoration: none;
+      display: block;
+      transition: none;
     }
-
+    
     .menu a:hover {
-      display: none;
+      background-color: white;
+      color: black;
+        cursor: context-menu;
+    }
+    
+    .menu-area:hover .menu {
+      display: block;
     }
 }
 
@@ -760,7 +833,6 @@ h3 {
 
   .footer-main {
     padding-top: 40px;
-    background-color: navy;
   }
 
   .footer-bottom span {
@@ -768,18 +840,10 @@ h3 {
     line-height: 28px;
   }
 
-  .menu-area:hover .menu{
-    display: none;	
-  }
-
-  .btn-area {
-    display: none;
-    }
-
     .social {
+      height: auto;
       width: 50%;
       float: right;
-      background-color: saddlebrown;
       border-bottom: 1px solid black;
       padding:14px 0 16px;
       text-align: right;
@@ -790,7 +854,6 @@ h3 {
       width: 50%;
       font-size: 12px;
       line-height: 28px;
-      background-color: silver;
       padding:14px 0 16px;
     }
 
@@ -798,38 +861,42 @@ h3 {
       display: none;
       }
     
-    .menu-area {
-       float:left;
+      .menu-area {
+        
         position: unset;
-        display: block;
-        /* padding-left: 270px; */
+        display: inline-block;
+        
       }
       
       .menu {
-        padding-top: 20px;
+        
         display: block;
         position: unset;
-        min-width: 160px;
-        z-index: unset;         /*dropdown lai bottom agadi leraauchha*/
-        right: unset;    
-        cursor: none;      
-      }
-  
-      .menu-area:hover .menu{
-        display: block;	
-      }
-  
-      .menu a:hover {
-        display: none;
-      }
-
-      .menu a {
-        color:black;
         background-color: white;
-        padding: 12px 16px;
+        min-width: 160px;
+        z-index: unset;
+        
+      }
+      
+      .menu a {
+        
+        color: black;
+        /* padding: 12px 16px; */
         text-decoration: none;
         display: block;
         transition: none;
+      }
+      
+      .menu a:hover {
+        background-color: white;
+        color: black;
+        cursor: context-menu;
+      }
+      
+      .menu-area:hover .menu {
+        display: block;
+      }
+      
 
   
 }
