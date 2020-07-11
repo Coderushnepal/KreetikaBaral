@@ -1,21 +1,14 @@
-* {
-    box-sizing: border-box;  /* yo use garyo bhane padding margin haru dida width milera baschha*/
-  }
-
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-/*Header*/
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
-  box-sizing: border-box;
+  box-sizing: border-box;           /* yo use garyo bhane padding margin haru dida width milera baschha*/
 }
 
+/*Header*/
 .main {
   width: 100% ;
   margin : 0 auto;
@@ -46,6 +39,7 @@ nav {
 }
 
 nav ul {
+  list-style: none;
   padding: 10px 0px;
 }
 nav ul li {
