@@ -207,8 +207,8 @@ h1 {
    }
 
    .btn1, .btn2 {
-    padding: 18px 26px;
-    font-size: 20px;
+    padding: 14px 18px;
+    font-size: 17px;
     line-height: 25px;
    }
 
@@ -234,8 +234,8 @@ h1 {
  }
 
  .btn1, .btn2 {
-  padding: 18px 26px;
-  font-size: 20px;
+  padding: 14px 18px;
+  font-size: 17px;
   line-height: 25px;
  }
 
@@ -269,7 +269,7 @@ h3 {
 .features-content p {
   padding-bottom: 30px;
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   font-size: 18px;
   color: white;
   /* background-color: teal; */
@@ -277,7 +277,7 @@ h3 {
 
 .features-img {
   width: 100%;
-  margin-bottom: 30px;
+  /* margin-bottom: 10px; */
 }
 
 .features-text {
@@ -444,7 +444,7 @@ line-height: 24px;
   /* border-radius: 5px; */
   border-color: #4452FE;
   color: white;
-  padding: 18px 54px;
+  padding: 16px 54px;
   font-size: 14px;
 }
 
@@ -483,7 +483,7 @@ line-height: 24px;
   /* border-radius: 5px; */
   border-color: #4452FE;
   color: white;
-  padding: 18px 76px;
+  padding: 16px 76px;
   font-size: 14px;
 }
 
@@ -524,24 +524,6 @@ line-height: 24px;
 
   .item2 p {
     font-size: 16px;
-  }
-
-  .item1-btn {
-    background: #4452FE;
-    /* border-radius: 5px; */
-    border-color: #4452FE;
-    color: white;
-    padding: 18px 58px;
-    font-size: 18px;
-  }
-
-  .item2-btn {
-    background: #4452FE;
-    /* border-radius: 5px; */
-    border-color: #4452FE;
-    color: white;
-    padding: 22px 80px;
-    font-size: 18px;
   }
   
   } 
@@ -673,8 +655,7 @@ line-height: 24px;
   }
 
   .p-btn {
-    font-size: 20px;
-    padding: 18px 80px;
+    font-size: 17px;
   }
 } 
 
@@ -911,7 +892,6 @@ line-height: 24px;
 
 .footer-top {
   width: 100%;
-  /* margin-bottom: 40px; */
 }
 
 .footer-top ul {
@@ -940,7 +920,7 @@ line-height: 24px;
 
 .footer-bottom {
   width: 100%;
-  padding: 40px 0px 30px
+  margin: 20px 0;
 }
 
 .location1 span {
