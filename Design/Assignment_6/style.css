@@ -66,6 +66,12 @@ nav ul li a {
   margin-right: 51px;
 }
 
+nav ul li a:hover {
+  color: #4452FE;
+ 
+  
+}
+
 .login-btn {
   background: black;
   border-radius: 5px;
@@ -73,6 +79,12 @@ nav ul li a {
   color: white;
   padding:12px 50px;
   font-size: 17px;
+}
+
+.login-btn:hover {
+  background-color: #ffffff;
+  color: #181818;
+  cursor: pointer;
 }
 
 .login {
@@ -83,7 +95,9 @@ nav ul li a {
 .hamburger {
   display: block;
   padding-top: 25px;
+  cursor: pointer;
 }
+
 .hamburger div {
   width: 25px;
   height: 3px;
@@ -182,6 +196,18 @@ h1 {
     background: black;
 }
 
+.btn2:hover {
+  background-color: #ffffff;
+  color: #181818;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: navy;
+  border-color: navy;
+  cursor: pointer;
+}
+
 /* Main Image */
 .board-image {
   background-color:#181818;
@@ -214,6 +240,12 @@ h1 {
 
    .board-image {
     margin-bottom: 80px;
+  }
+
+  .btn1, .btn2 {
+    padding: 20px 55px;
+    font-size: 20px;
+    
   }
 } 
 
@@ -269,7 +301,7 @@ h3 {
 .features-content p {
   padding-bottom: 30px;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   font-size: 18px;
   color: white;
   /* background-color: teal; */
@@ -277,7 +309,7 @@ h3 {
 
 .features-img {
   width: 100%;
-  /* margin-bottom: 10px; */
+  margin-bottom: 30px;
 }
 
 .features-text {
@@ -396,9 +428,9 @@ line-height: 24px;
 } 
 
 /* Contents */
-.main-content {
-  /* background-color: violet; */
-}
+/* .main-content {
+  background-color: violet;
+} */
 
 .content-inside {
   width: 100%;
@@ -493,6 +525,18 @@ line-height: 24px;
   /* background-color: paleturquoise; */
 }
 
+.item1-btn:hover {
+  background-color: navy;
+  border-color: navy;
+  cursor: pointer;
+}
+
+.item2-btn:hover {
+  background-color: navy;
+  border-color: navy;
+  cursor: pointer;
+}
+
 
 /* For tablet */
 @media (min-width: 994px) {
@@ -524,6 +568,10 @@ line-height: 24px;
 
   .item2 p {
     font-size: 16px;
+  }
+
+  .item1-btn, .item2-btn {
+    font-size: 18px;
   }
   
   } 
@@ -626,6 +674,12 @@ line-height: 24px;
   color: white;
   padding: 16px 54px;
   font-size: 14px;
+}
+
+.p-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
 .partner-btn {
@@ -892,6 +946,7 @@ line-height: 24px;
 
 .footer-top {
   width: 100%;
+  /* margin-bottom: 40px; */
 }
 
 .footer-top ul {
@@ -920,7 +975,7 @@ line-height: 24px;
 
 .footer-bottom {
   width: 100%;
-  margin: 20px 0;
+  padding: 40px 0px 30px;
 }
 
 .location1 span {
@@ -945,7 +1000,7 @@ line-height: 24px;
   margin-bottom: 10px;
 }
 
- /* For tablet */
+/* For tablet */
  @media (min-width: 994px) {
   .footer-inside {
        max-width: 850px;
