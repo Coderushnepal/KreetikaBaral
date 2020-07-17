@@ -106,7 +106,21 @@ nav ul li a:hover {
 }
 
 /*For Tablet*/
-@media (min-width: 994px) {
+@media (min-width: 768px) {
+  .main {
+     max-width: 800px;
+ }
+
+ nav,
+ .login-btn
+ {
+     display: none;
+ }
+
+} 
+
+/*For tablet*/
+@media (min-width: 992px) {
    .main {
       max-width: 850px;
   }
@@ -217,14 +231,47 @@ h1 {
 }
 
 /*For Tablet*/
+@media (min-width: 768px) {
+  .container {
+     max-width: 800px;
+ }
+
+ h1 {
+  font-size: 52px;
+  line-height: 60px;
+ }
+
+ .container p {
+  font-size: 22px;
+  line-height: 30px;
+ }
+
+ .btn1, .btn2 {
+  padding: 14px 16px;
+  font-size: 17px;
+  line-height: 25px;
+ }
+
+ .board-image {
+  margin-bottom: 80px;
+}
+
+.btn1, .btn2 {
+  padding: 20px 55px;
+  font-size: 20px;
+  
+}
+} 
+
+/*For Tablet*/
 @media (min-width: 994px) {
     .container {
        max-width: 850px;
    }
 
    h1 {
-    font-size: 80px;
-    line-height: 88px;
+    font-size: 58px;
+    line-height: 65px;
    }
 
    .container p {
@@ -256,8 +303,8 @@ h1 {
  }
 
  h1 {
-   font-size: 80px;
-  line-height: 88px;
+   font-size: 65px;
+  line-height: 75px;
  }
 
  .container p {
@@ -345,6 +392,48 @@ span {
 }
 
 /*For Tablet*/
+@media (min-width: 768px) {
+  .features {
+    margin-bottom: 80px;
+  }
+  
+  .features p {
+    font-size: 22px;
+  }
+  
+  .features-content {
+       max-width: 800px;
+   }
+  
+   .features-img {
+     width: 60%;
+   }
+  
+   .features-text {
+     width: 40%;
+     /* padding: 1px 0; */
+   }
+  
+   .text1{
+    /* padding-top: 30px; */
+   margin: 10px 20px 30px 15px;
+   
+  }
+  
+  .text1 h5 {
+   padding-left: 20px;
+   font-size: 20px;
+   line-height: 30px;
+  }
+  
+  span {
+   font-size: 16px;
+  line-height: 24px;
+  }
+  
+  } 
+
+/*For Tablet*/
 @media (min-width: 994px) {
 .features {
   margin-bottom: 80px;
@@ -428,10 +517,6 @@ line-height: 24px;
 } 
 
 /* Contents */
-/* .main-content {
-  background-color: violet;
-} */
-
 .content-inside {
   width: 100%;
   padding: 0 20px;
@@ -460,7 +545,7 @@ line-height: 24px;
   color: black;
   /* padding-left: 20px; */
   font-size: 22px;
-  padding: 30px;
+  padding: 30px 0px 5px 0px;
   text-align: center;
 }
 
@@ -482,7 +567,7 @@ line-height: 24px;
 
 .click1 {
   text-align: center;
-  margin: 55px 0;
+  margin: 10px 0px 30px 0px;
   /* background-color: paleturquoise; */
 }
 
@@ -499,7 +584,7 @@ line-height: 24px;
   color: black;
   /* padding-left: 20px; */
   font-size: 22px;
-  padding: 30px;
+  padding: 30px 0px 5px 0px;
   text-align: center;
 }
 
@@ -515,13 +600,13 @@ line-height: 24px;
   /* border-radius: 5px; */
   border-color: #4452FE;
   color: white;
-  padding: 16px 76px;
+  padding: 16px 60px;
   font-size: 14px;
 }
 
 .click2 {
   text-align: center;
-  margin: 42px 0;
+  margin: 10px 0px 30px 0px;
   /* background-color: paleturquoise; */
 }
 
@@ -537,6 +622,47 @@ line-height: 24px;
   cursor: pointer;
 }
 
+/* For tablet */
+@media (min-width: 768px) {
+  .content-inside {
+       max-width: 800px;
+    }
+
+    .content-inside p {
+      font-size: 22px;
+   }
+
+  .item1 {
+    width: 45%;
+    /* float: left; */
+  }
+
+  .item2 {
+    width: 53%;
+    margin-top: 30px;
+  }
+
+  .click1 {
+    margin: 45px 0px 60px 0px;
+  }
+
+  .click2 {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .item1 p {
+    font-size: 16px;
+  }
+
+  .item2 p {
+    font-size: 16px;
+  }
+
+  .item1-btn, .item2-btn {
+    font-size: 18px;
+  }
+  
+  } 
 
 /* For tablet */
 @media (min-width: 994px) {
@@ -559,15 +685,19 @@ line-height: 24px;
   }
 
   .click1 {
-    margin: 90px 0;
+    margin: 45px 0px 65px 0px;
+  }
+
+  .click2 {
+    margin: 10px 0px 10px 0px;
   }
 
   .item1 p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .item2 p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .item1-btn, .item2-btn {
@@ -598,11 +728,11 @@ line-height: 24px;
     }
   
     .click1 {
-      margin-top: 80px ;
+      margin: 45px 0px 65px 0px ;
     }
     
     .click2 {
-      margin: 40px 0;
+      margin: 10px 0px 10px 0px;
       }
 
       .macbook {
@@ -610,11 +740,18 @@ line-height: 24px;
       }
 
       .item1 p {
-        font-size: 16px;
+        font-size: 20px;
       }
     
       .item2 p {
-        font-size: 16px;
+        font-size: 20px;
+      }
+
+      .item1 h5 {
+        font-size: 30px;
+      }
+      .item2 h5 {
+        font-size: 30px;
       }
   }
 
@@ -688,6 +825,32 @@ line-height: 24px;
   padding-bottom: 20px;
   /* background-color: paleturquoise; */
 }
+
+/* For tablet */
+@media (min-width: 768px) {
+  .partners-inside {
+       max-width: 800px;
+    }
+
+  .partners-img1, .partners-img2 {
+    width: 50%;
+  }
+
+  .partners-logo {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .partners-inside p {
+    font-size: 22px;
+    margin: 20px 0px;
+  }
+
+  .p-btn {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+} 
 
 /* For tablet */
 @media (min-width: 994px) {
@@ -832,10 +995,59 @@ line-height: 24px;
 
   .p-2 {
     padding: 20px 0px 0px 15px;
-    
   }
 
-  /* For tablet */
+   /* For tablet */
+@media (min-width: 768px) {
+  .testimonials-inside {
+       max-width: 800px;
+    }
+
+  .column-1, .column-2 {
+    width: 49%;
+  }
+
+  .intro1 h5 {
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .intro1 span{
+    font-size: 14px;
+  }
+
+  .person1 p {
+    padding: 15px 15px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .intro2 h5 {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .intro2 span{
+    font-size: 14px;
+  }
+
+  .person2 p {
+    padding: 15px 15px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .testi-contents {
+    width: 90%;
+    margin: 0 auto;
+  }
+} 
+
+
+
+  /* For ipad pro */
 @media (min-width: 994px) {
   .testimonials-inside {
        max-width: 850px;
@@ -999,6 +1211,41 @@ line-height: 24px;
 .phone {
   margin-bottom: 10px;
 }
+
+/* For tablet */
+@media (min-width: 768px) {
+  .footer-inside {
+       max-width: 8500px;
+    }
+
+    .footer-top {
+      width: 60%;
+    }
+
+    .Fingertipe, .Resources, .About {
+      width: 33.333333333333%;
+    }
+
+   .footer-bottom {
+      width: 40%;
+    }
+
+   .location1 span {
+     font-size: 16px;
+   }
+
+   .phone1 span {
+    font-size: 16px;
+  }
+
+  .footer-inside h5 {
+    font-size: 18px;
+  }
+
+  .footer-top ul li a {
+    font-size: 18px;
+  }
+} 
 
 /* For tablet */
  @media (min-width: 994px) {
