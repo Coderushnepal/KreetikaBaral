@@ -10,7 +10,8 @@
     <!--creating div for title and subtitle-->
     <div class="title" id="title">
         <h2 style="text-align: center; color: white;">Hangman</h2>
-        <div style="text-align: center; color: white;"" class="lineText" id="lineText">Enter a letter in the blanks</div><br><br>
+        <div style="text-align: center; color: white;" class="lineText" id="lineText">Enter a letter in the blanks</div>
+        <p style="text-align: center; color: orange;">Hint : Fruits Name</p><br><br>
     </div>
     <!--Creating div for hangman body-->
     <div class="game-container">
@@ -32,6 +33,14 @@
             <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
             <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
         </svg>
+        <!--Div for game over-->
+        <div id="game-over" class="game-over">
+            <button id="game-over-btn" class="game-over-btn"></button>
+        </div>
+        <!--Div for game won-->
+        <div id="game-won" class="game-won">
+            <button id="game-won-btn" class="game-won-btn"></button>
+        </div>
     </div>
     
 </body>

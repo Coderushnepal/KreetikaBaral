@@ -42,7 +42,7 @@ function displayRightGuess(value, index) {
     rightWords.push(value);
     const letterContainer = document.getElementById('letterDiv').children[index];
     letterContainer.innerHTML = value;
-    // gameWon(rightWords);
+    gameWon();
 }
 
 window.onload = function() {
@@ -57,13 +57,59 @@ function displayWrongGuess(wrongWords) {
     wrongLetterContainerr.innerHTML = "Wrong Guess" +' : '+ Array.from(wrongWords).join(', ');
     document.body.appendChild(wrongLetterContainerr);
     displayFigureParts();                                 //tala bata ek ek wata part add gardai janchha
-    // gameover();
+    gameover();                                           
 }
 
 // To display the figure parts
-// figurepart is an array
+// figurepart bhaneko euta  array ho
 var k = 0;
 function displayFigureParts() {
     figureParts[k].style.visibility = 'visible';
     k++;
+}
+
+//--------Function for gameover display----------
+function gameover() {
+    var gameOver = document.getElementById('game-over');
+    var playAgainBtn = document.getElementById('game-over-btn');
+
+    if(Array.from(wrongWords).length === figureParts.length) {
+
+        gameOver.innerHTML = 'Game Over!!!';
+        playAgainBtn.innerHTML = 'Play Again';
+
+        document.body.appendChild(gameOver);
+        gameOver.appendChild(playAgainBtn);
+        gameOver.style.display = 'block';
+
+        // Reload the browser window on button click
+        playAgainBtn.addEventListener('click' , function(){
+            window.location.reload();
+            gameOver.style.display = 'none';
+        });
+
+    } else {
+        gameOver.style.display = 'none';
+    }
+}
+
+//--------Function for gamewon display----------
+function gameWon() {
+    var gameWon = document.getElementById('game-won');
+    var playAgainBtn = document.getElementById('game-won-btn');
+
+    if(rightWords.length === wordLetters.length) {
+        // console.log('You won!!!');
+        gameWon.innerHTML = "Congratulations, you won!!";
+        playAgainBtn.innerHTML = 'Play Again';
+
+        document.body.appendChild(gameWon);
+        gameWon.appendChild(playAgainBtn);
+        gameWon.style.display = 'block';
+
+        // Reload the browser window on button click
+        playAgainBtn.addEventListener('click' , function(){
+            window.location.reload();
+        });
+    }
 }

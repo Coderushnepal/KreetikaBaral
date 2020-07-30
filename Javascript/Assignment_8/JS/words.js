@@ -3,9 +3,13 @@ Mango
 Banana
 Orange
 Pear
+strawberry
 Pineapple
 Grapes
 Guava
+Jackfruit
+Kiwi
+Avacado
 Watermelon`;
 
 var splitList = wordsList.split('\n');

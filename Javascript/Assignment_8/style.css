@@ -2,12 +2,8 @@ body {
     background-color: #34495e;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex;
-    flex-direction: column; */
     text-align: center;
-    /* height: 80vh; */
-    /* margin: 0; */
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .dash {
@@ -21,9 +17,7 @@ body {
 
 .game-container {
     padding: 40px 0 30px 90px;
-    /* position: relative; */
     margin-left: 200px;
-    /* height: 350px; */
     width: 300px;
    
 }
@@ -33,8 +27,55 @@ body {
     stroke: #fff;
     stroke-width: 4px;
     stroke-linecap: round;
-    /* position: absolute; */
     top: 100px;
    
+}
+
+.game-over {
+    padding: 20px 40px;
+    height: 100px;
+    width: 200px;
+    background-color:white;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    display: none;
+    margin-left: 650px ;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-over-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: #ffffff;
+    margin-top: 20px;
+    border-color: red;
+    font-weight: bold;
+}
+
+.game-won {
+    padding: 20px 40px;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    display: none;
+    margin-left: 650px ;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.game-won-btn {
+    padding: 10px 20px;
+    background-color: green;
+    color: #ffffff;
+    margin-top: 20px;
+    border-color: green;
+    font-weight: bold;
 }
 

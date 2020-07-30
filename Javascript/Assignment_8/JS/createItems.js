@@ -32,6 +32,7 @@ alreadyGuessed.id = 'alreadyGuessed';
 alreadyGuessed.class = 'alreadyGuessed';
 document.body.appendChild(alreadyGuessed);
 
+//-----creating div for wrongletter container
 var wrongLetterContainer = document.createElement('div')
 
 wrongLetterContainer.id = 'wrongLetterContainer';
