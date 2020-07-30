@@ -1,7 +1,6 @@
 var wordsList = `Apple
 Mango
 Banana
-Strawberry
 Orange
 Pear
 Pineapple

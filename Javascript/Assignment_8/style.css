@@ -19,4 +19,22 @@ body {
     display: inline-block;
 }
 
+.game-container {
+    padding: 40px 0 30px 90px;
+    /* position: relative; */
+    margin-left: 200px;
+    /* height: 350px; */
+    width: 300px;
+   
+}
+
+.figure-container {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    /* position: absolute; */
+    top: 100px;
+   
+}
 
