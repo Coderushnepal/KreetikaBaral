@@ -66,7 +66,7 @@ console.log(identicalFilter([ '88', '999', '22', '545', '133' ]));
 console.log(identicalFilter([ 'xxxxo', 'oxo', 'xox', 'ooxxoo', 'oxo' ]));
 console.log(' \n\nAnswer-4 : \n\n')
 
-//5. Filter Repeating Character Strings
+//5. Separating keys and values of object
 function keysAndValues(obj){
 	let keys = Object.keys(obj);			
 	let output = [];
