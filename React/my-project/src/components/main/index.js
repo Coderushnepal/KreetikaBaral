@@ -1,1 +1,1 @@
-export {default} from './MainRouter';  //Main huna parchha
+export {default} from './Main';  //Main huna parchha

@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
-// import Counter from './counter/counter.js';
-// import NameList from './nameList/name.js';
-// import './nameList/name.css';
-// import Contact from './components/Contact';
-import EnhancedUser from './Assignment2/user';
 
-function App() {
+// import EnhancedUser from "./Assignment2/user";
+
+// function App() {
   // const names = ['Neeta Sapkota',
   // 'Neha Shiwakoti',
   // 'Srijana Khatiwada',
@@ -23,8 +19,7 @@ function App() {
   // 'Srijana Thulung'];
   // return (
   //   <div className="main">
-  //     <Counter /> 
-  //     <Contact data="Hello from the other side" age={20}/>
+  //     <Counter />
   //     <div className="nameList">
   //       {names.map((name,index)=>
   //         <NameList key={name.split('').concat(index)} name={name}/>
@@ -32,19 +27,28 @@ function App() {
   //     </div>
   //   </div>
   // );
+  
 
-  const names=["Kirtee","Neeta","Sindhu","Bisikha","Elisha", "Rachana"]
-  return (
-    <div className="App">
-      <div className="userList">
-        <h1>Assignment 2</h1>
-      {names.map((name,index) => 
-        <EnhancedUser key={name} name={name} />
-      )}
-      </div>  
-    </div>
-  );
-}
 
+//   const people = ["Kirtee", "Neeta", "Sindhu", "Bisikha", "Elisha", "Rachana"];
+//   return (
+//     <div className="App">
+//       <div className="userList">
+//         <h1>Assignment 2</h1>
+//         {people.map((name, index) => (
+//           <EnhancedUser key={name} name={name} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from 'react';
+import Router from './components/router'
+ 
+const App = () => <Router />
+ 
 export default App;
 

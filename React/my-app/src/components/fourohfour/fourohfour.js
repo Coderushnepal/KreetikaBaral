@@ -1,8 +1,8 @@
 import React from "react";
 import {useRouteMatch} from 'react-router-dom';
-
+ 
 import "./fourohFour.css";
-
+ 
 const Fourohfour = () => {
     const {url} =useRouteMatch();
     return (
@@ -12,5 +12,6 @@ const Fourohfour = () => {
   </div>
   );
 };
-
+ 
 export default Fourohfour;
+
