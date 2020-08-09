@@ -22,7 +22,7 @@ class BeerGrid extends Component {
         beers: dummyBeersData,
         isLoading: false,
       });
-    }, 5000);
+    }, 2000);
   };
 
   componentDidMount() {
