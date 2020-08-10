@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Beer from "./Beer";
 import { Header, Spinner } from "../../commons";
-import { dummyBeersData } from "../../../constants/dummyData";
+import { fetchBeers } from "../../../services/beerService";
 
 class BeerGrid extends Component {
   constructor(props) {
@@ -17,12 +17,12 @@ class BeerGrid extends Component {
   scrollParentRef = null;
 
   fetchBeers = async () => {
-    setTimeout(() => {
-      this.setState({
-        beers: dummyBeersData,
-        isLoading: false,
-      });
-    }, 2000);
+    const data = await fetchBeers();
+
+    this.setState({
+      beers: data,
+      isLoading: false,
+    });
   };
 
   componentDidMount() {
