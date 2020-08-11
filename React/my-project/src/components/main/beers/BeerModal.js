@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Modal, Spinner } from "../../commons";
+import * as toast from "../../../utils/toast";
 import { fetchBeerById } from "../../../services/beerService";
 
 class BeerModal extends React.Component {
@@ -15,12 +16,22 @@ class BeerModal extends React.Component {
   }
 
   fetchBeer = async () => {
-    const data = await fetchBeerById(this.props.beerId);
+    try {
+      const data = await fetchBeerById(this.props.beerId);
 
-    this.setState({
-      beer: data,
-      isLoading: false,
-    });
+      this.setState({
+        beer: data,
+        isLoading: false,
+      });
+      // toast.success({
+      //   title: "Yay!!",
+      //   message: "Beers successfully retrieved!",
+      // });
+    } catch (error) {
+      const errorMsg = error.response.data.message;
+
+      toast.error({ title: "Oh Snap!!", message:errorMsg});
+    }
   };
 
   componentDidMount() {
@@ -71,7 +82,7 @@ class BeerModal extends React.Component {
                   </li>
                 </ul>
                 <p>{description}</p>
-                {!!food_pairing && (
+                {!!food_pairing.length && (
                   <div className="DescriptionModal__right__list">
                     <span>Best served with:</span>
                     <ul>

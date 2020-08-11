@@ -1,5 +1,5 @@
 import http from "../utils/http";
-import { dummyBeersData } from "../constants/dummyData";
+// import { dummyBeersData } from "../constants/dummyData";
 
 export const fetchBeers = async () => {
   //call async API
@@ -12,8 +12,7 @@ export const fetchBeers = async () => {
 
 export const fetchBeerById = async (id) => {
   //call single beer async API
-  return dummyBeersData[id - 1];
+  const { data } = await http.get(`/beers/${id}`);
+  
+  return data[0];
 };
-
-
-//1:47

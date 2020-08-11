@@ -4,5 +4,5 @@ import "./assets/css/toaster.css";
 import "./assets/css/spinner.css";
 
 //Library Dependent CSS
-// import "izitoast/dist/css/zitoast.css";
+import "izitoast/dist/css/iziToast.css";
 

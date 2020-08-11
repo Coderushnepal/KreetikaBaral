@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Beer from "./Beer";
+import * as toast from "../../../utils/toast";
 import { Header, Spinner } from "../../commons";
 import { fetchBeers } from "../../../services/beerService";
 
@@ -17,12 +18,22 @@ class BeerGrid extends Component {
   scrollParentRef = null;
 
   fetchBeers = async () => {
-    const data = await fetchBeers();
+    try {
+      const data = await fetchBeers();
 
-    this.setState({
-      beers: data,
-      isLoading: false,
-    });
+      this.setState({
+        beers: data,
+        isLoading: false,
+      });
+      // toast.success({
+      //   title: "Yay!!",
+      //   message: "Beers successfully retrieved!",
+      // });
+    } catch (error) {
+      const errorMsg = error.response.data.message;
+
+      toast.error({ title: "Oh Snap!!", message: errorMsg });
+    }
   };
 
   componentDidMount() {
