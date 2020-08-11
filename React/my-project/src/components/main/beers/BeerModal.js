@@ -23,10 +23,10 @@ class BeerModal extends React.Component {
         beer: data,
         isLoading: false,
       });
-      // toast.success({
-      //   title: "Yay!!",
-      //   message: "Beers successfully retrieved!",
-      // });
+      toast.success({
+        title: "Yay!!",
+        message: "Beers successfully retrieved!",
+      });
     } catch (error) {
       const errorMsg = error.response.data.message;
 
