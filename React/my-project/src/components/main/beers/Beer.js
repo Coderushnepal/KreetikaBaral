@@ -1,14 +1,18 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
+
 import BeerModal from "./BeerModal";
+import { dummyBeersData as favourites } from "../../../constants/dummyData";
+
 class Beer extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      isFavourite: false,
       showModal: false,
     };
   }
+
   handleModalOpen = () => {
     this.setState({ showModal: true });
   };
@@ -16,8 +20,9 @@ class Beer extends Component {
     this.setState({ showModal: false });
   };
   render() {
-    const { isFavourite, showModal } = this.state;
-    const { id,name, description, image_url } = this.props.info;
+    const { showModal } = this.state;
+    const { id, name, description, image_url } = this.props.info;
+    const beerIndex = favourites.findIndex((beer) => beer.id === id);
     return (
       <Fragment>
         {showModal ? (
@@ -28,8 +33,8 @@ class Beer extends Component {
           />
         ) : null}
         <div className="card">
-          <span className={`favourite ${isFavourite ? "active" : ""}`}>
-            <i className="far fa-star" />
+          <span className={`favourite ${beerIndex > -1 ? "active" : ""}`}>
+            <i className={`${beerIndex > -1 ? "fa" : "far"} fa-star`} />
           </span>
           <div
             className="card__imgcontainer"

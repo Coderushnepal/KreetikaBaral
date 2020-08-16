@@ -73,6 +73,7 @@ class BeerGrid extends Component {
 
         <main>
           <div className="container" ref={(r) => (this.scrollParentRef = r)}>
+            {!beers.length && <h2>Sorry, No Beers Found !!</h2>}
             <InfiniteScroll
               dataLength={beers.length}
               next={this.fetchBeers}
