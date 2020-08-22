@@ -3,7 +3,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 import Beer from "./Beer";
 import * as toast from "../../../utils/toast";
-import { Header, Spinner } from "../../commons";
+import { Header, Spinner, Counter } from "../../commons";
 import { fetchBeers } from "../../../services/beerService";
 
 class BeerGrid extends Component {
@@ -73,7 +73,7 @@ class BeerGrid extends Component {
 
         <main>
           <div className="container" ref={(r) => (this.scrollParentRef = r)}>
-            {!beers.length && <h2>Sorry, No Beers Found !!</h2>}
+            <Counter />
             <InfiniteScroll
               dataLength={beers.length}
               next={this.fetchBeers}
