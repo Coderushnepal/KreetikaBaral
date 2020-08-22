@@ -1,8 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import Header from "../commons/header/Header";
 import Beer from "../main/beers/Beer";
-import { dummyBeersData } from "../../constants/dummyData";
 
 class Favourites extends React.Component {
   constructor(props) {
@@ -20,10 +20,10 @@ class Favourites extends React.Component {
   };
 
   render() {
-    let favourites = dummyBeersData;
+    let { favouriteBeers } = this.props;
 
     if (this.state.searchFor) {
-      favourites = favourites.filter((beer) =>
+      favouriteBeers = favouriteBeers.filter((beer) =>
         beer.name
           .toLowerCase()
           .includes(this.state.searchFor.toLocaleLowerCase())
@@ -36,8 +36,8 @@ class Favourites extends React.Component {
 
         <main>
           <div className="container">
-            {!!favourites.length &&
-              favourites.map((beer) => <Beer key={beer.id} info={beer} />)}
+            {!!favouriteBeers.length &&
+              favouriteBeers.map((beer) => <Beer key={beer.id} info={beer} />)}
           </div>
         </main>
       </div>
@@ -45,4 +45,8 @@ class Favourites extends React.Component {
   }
 }
 
-export default Favourites;
+const mapStateToProps = ({ favouriteBeerReducer }) => {
+  return { favouriteBeers: favouriteBeerReducer.favouriteBeers };
+};
+
+export default connect(mapStateToProps)(Favourites);

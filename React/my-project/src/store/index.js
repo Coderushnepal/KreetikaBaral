@@ -1,5 +1,6 @@
 // import { compose, createStore } from "redux";
-// ​import rootReducer from "../reducers";
+// ​
+// import rootReducer from "../reducers";
 // ​
 // const composeEnhancers =
 //   typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
@@ -12,7 +13,7 @@
 // ​
 // export default createStore(rootReducer, enhancers);
 
-import { compose, createStore } from "redux";
+import {  createStore } from "redux";
 import rootReducer from "../reducers";
 
 export default createStore(rootReducer)
