@@ -1,12 +1,12 @@
 import { combineReducers } from "redux";
 
-import dateReducer from "./dateReducer";
-import counterReducer from "./counterReducer";
+// import dateReducer from "./dateReducer";
+// import counterReducer from "./counterReducer";
 import favouriteBeerReducer from "./favouriteBeerReducer";
 
 const rootReducer = combineReducers({
-  counterReducer,
-  dateReducer,
+  // counterReducer,
+  // dateReducer,
   favouriteBeerReducer,
 });
 

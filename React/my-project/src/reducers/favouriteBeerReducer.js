@@ -1,13 +1,15 @@
 import {
   ADD_FAVOURITE_BEER,
   REMOVE_FAVOURITE_BEER,
+  ERROR_FETCHING_BEER,
 } from "../constants/actions";
 
 const initialState = {
   favouriteBeers: [],
+  error: null,
 };
 
-const favouriteBeerReducer = (state = initialState, action) => {
+const favouriteBeersReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_FAVOURITE_BEER:
       return {
@@ -21,9 +23,14 @@ const favouriteBeerReducer = (state = initialState, action) => {
           (beer) => beer.id !== action.payload
         ),
       };
+    case ERROR_FETCHING_BEER:
+      return {
+        ...state,
+        error: action.payload,
+      };
     default:
       return state;
   }
 };
 
-export default favouriteBeerReducer;
+export default favouriteBeersReducer;
