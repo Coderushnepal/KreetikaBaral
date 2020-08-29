@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(/img/1.jpg) no-repeat;
+  background-size: cover;
+}
+
+form {
+  padding: 20px;
+  /* margin-top:60px; */
+  border-radius: 30px;
+  width: 60%;
+  margin: 60px auto;
+}
+
+form button,
+form h5 {
+  margin: 20px 0;
+}
+
+.project-summary {
+  border-radius: 20px;
+  /* display: inline-block; */
+}
+
+h5 {
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.brand-logo {
+  font: 400 100px/1.5 "Pacifico", Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
+}
+
+li {
+  list-style: none;
+}
+
+h4 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.profile {
+  width: 30%;
+  margin-top: 150px;
+  border-radius: 20px;
+}
