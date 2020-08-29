@@ -26,7 +26,7 @@ const Login = ({ history }) => {
   return isLoggedIn() ? (
     <Redirect to={routes.HOME} />
   ) : (
-    <h1 onClick={logIn}>Login<br/><span>Click Me</span></h1>
+    <h1 onClick={logIn}>Login</h1>
   );
 };
 
