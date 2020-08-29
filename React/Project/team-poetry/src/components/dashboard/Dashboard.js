@@ -1,12 +1,12 @@
 import React from "react";
-import Notifications from "./Notifications";
+// import Notifications from "./Notifications";
 import PoemList from "../poems/PoemList";
 import { connect } from "react-redux";
 import Navbar from "../layout/Navbar";
 
 class Dashboard extends React.Component {
   render() {
-    // console.log(this.props);
+    // console.log(this.props);   //poemReducerma bhayeko 3 wata dummyPoem console ma dekhauchha
     const { dummyPoems } = this.props; //yeslai comment garera  (yo destructure gareko ho) ani tala this.props.dummyPoems lekhda hunchha
     return (
       <div>

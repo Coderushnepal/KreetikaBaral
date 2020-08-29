@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NewPoemSignedInLinks from './NewPoemSignedInLinks';
-import SignedOutLinks from './SignedOutLinks';
+// import SignedOutLinks from './SignedOutLinks';
 
 const Navbar = () => {
   return (
