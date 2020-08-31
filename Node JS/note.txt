@@ -1,0 +1,74 @@
+Study notes August 24
+CRUD
+
+REST(ful) API
+
+GET -> R
+POST -> C
+DELETE -> D
+PUT -> U
+
+[{
+  id: 1,
+  firstName: 'Hello',
+  lastName: 'World',
+  phoneNumbers: [
+    {
+      id: 9
+      number: 123456,
+      type: 'cell'
+    },
+    {
+      id: 8
+      number: 98765,
+      type: 'home'
+    }
+  ]
+},
+{
+  id: 2,
+  firstName: 'Hi',
+  lastName: 'Nepal'
+},
+{
+  "id": 3,
+  "firstName": "Something",
+  "lastName": "Anything",
+  "phoneNumbers": []
+}]
+
+GET localhost:1234/users -> all records
+GET localhost:1234/users/:userId -> fetch record that matches this userId
+
+GET localhost:1234/users/:userId/numbers -> fetch all phone numbers of this particular user
+
+GET localhost:1234/users/:userId/numbers/:numberId -> fetch specific number of this particular user
+
+getById
+getAll
+
+POST localhost:1234/users
+Request body
+{
+  "id": 3,
+  "firstName": "Something",
+  "lastName": "Anything",
+  "phoneNumbers": []
+}
+
+DELETE localhost:1234/users/:userId
+
+PUT localhost:1234/users/3
+Request body
+{
+  "firstName": "Changed"
+}
+
+Assignments
+-> REST API best practices
+-> Http Status Codes
+-> Postman
+
+Development env / Production env
+
+api-dev.todo.com / api.todo.com
