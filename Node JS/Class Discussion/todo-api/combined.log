@@ -1,0 +1,13 @@
+{"message":"Fetching user information with id 1","level":"info"}
+{"message":"Cannot find the user with id 1","level":"error"}
+{"message":"Fetching all users","level":"info"}
+{"message":"Fetching user information with id 1","level":"info"}
+{"message":"Cannot find the user with id 1","level":"error"}
+{"message":"GET /users/1","level":"info"}
+{"message":"Fetching user information with id 1","level":"info"}
+{"message":"Cannot find the user with id 1","level":"error"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"POST /users/1","level":"info"}
+{"message":"POST /users/","level":"info"}
+{"message":"POST /users/","level":"info"}

@@ -2,6 +2,8 @@
 import fs from "fs";
 import { Router } from "express";
 
+import logger from "./utils/logger";
+import { validateUserCreation } from "./schemas/user";
 import {
   GET_USERS,
   GET_USER_BY_ID,
@@ -23,6 +25,7 @@ router.get("/", (request, response, next) => {
 });
 
 router.get(GET_USERS, (request, response, next) => {
+  logger.info("Fetching all users");
   const usersJson = require(usersJsonPath);
 
   response.json(usersJson);
@@ -30,12 +33,14 @@ router.get(GET_USERS, (request, response, next) => {
 
 router.get(GET_USER_BY_ID, (request, response, next) => {
   const userId = +request.params.userId;
+  logger.info(`Fetching user information with id ${userId}`);
 
   const usersJson = require(usersJsonPath);
 
   const requestedUser = usersJson.find((user) => user.id === userId);
 
   if (!requestedUser) {
+    logger.error(`Cannot find the user with id ${userId}`);
     response.json({
       message: "Cannot find the user with id" + userId,
     });
@@ -44,21 +49,9 @@ router.get(GET_USER_BY_ID, (request, response, next) => {
   response.json(requestedUser);
 });
 
-router.post(CREATE_USER, (request, response, next) => {
+//post ko lagi
+router.post(CREATE_USER, validateUserCreation, (request, response, next) => {
   const params = request.body;
-  // console.log(request.body);
-
-  if (!params.firstName || !params.lastName || !params.phoneNumbers) {
-    response.json({
-      message: "Insufficient number of arguments supplied",
-    });
-  }
-
-  if (Array.isArray(params.phoneNumbers)) {
-    response.json({
-      message: "phoneNumbers should be an array",
-    });
-  }
 
   //id autoincrement ko lagi
   const usersJson = require(usersJsonPath);
@@ -110,7 +103,7 @@ router.delete(DELETE_USER, (request, response, next) => {
   });
 });
 
-//post ko lagi
+//put ko lagi
 router.put(UPDATE_USER, (request, response, next) => {
   const userId = +request.params.userId;
   const params = request.body;
