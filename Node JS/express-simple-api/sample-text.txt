@@ -1,0 +1,1 @@
+This content is being read by NodeJS using the fs module.
