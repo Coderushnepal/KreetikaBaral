@@ -6,7 +6,7 @@ import routes from "./src/routes";
 import logger from "./src/utils/logger";
 import genericErrorHandler from "./src/middlewares/genericErrorHandler";
 
-const appPort = 8848;
+const appPort = 1234;
 
 const loggingMiddleware = (req, res, next) => {
   const url = req.url;
