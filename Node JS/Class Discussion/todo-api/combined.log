@@ -98,3 +98,6 @@
 {"message":"GET /users/4","level":"info"}
 {"message":"Fetching user information with id 4","level":"info"}
 {"message":"Cannot find the user with id 4","level":"error"}
+{"message":"GET /users/4","level":"info"}
+{"message":"Fetching user information with id 4","level":"info"}
+{"message":"Cannot find the user with id 4","level":"error"}
