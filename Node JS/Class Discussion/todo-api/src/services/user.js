@@ -1,67 +1,79 @@
 import logger from "../utils/logger";
 import usersJson from "../data/users";
+import * as User from "../models/User";
+import * as UserPhoneNumber from "../models/UserPhoneNumber";
 import NotFoundError from "../utils/NotFoundError";
 
 /**
  * Get all users.
  */
-export function getAllUsers() {
+export async function getAllUsers() {
   logger.info("Fetching all users");
+  const data = await User.getAll();
 
   return {
+    data,
     message: "List of all users",
-    data: usersJson,
   };
 }
 
 /**
  * Get user by id.
- * @param userId 
+ * @param userId
  */
-export function getUserById(userId) {
+export async function getUserById(userId) {
   logger.info(`Fetching user information with id ${userId}`);
 
-  const requestedUser = usersJson.find((user) => user.id === userId);
+  const result = await User.getById(userId);
 
-  if (!requestedUser) {
+  if (!result) {
     logger.error(`Cannot find the user with id ${userId}`);
 
     throw new NotFoundError(`Cannot find the user with id ${userId}`);
   }
   //else jastai
   return {
+    data: result,
     message: `Information about userId ${userId}`,
-    data: requestedUser,
   };
 }
 
 /**
  * Create a user.
- * @param  params 
+ * @param  params
  */
-export function createUser(params) {
-  //Finding the maximum id from existing JSON file.
-  const maxId = usersJson.reduce((acc, cur) => {
-    return cur.id > acc ? cur.id : acc;
-  }, 0);
-
-  usersJson.push({
-    id: maxId + 1,
-    ...params,
+export async function createUser(params) {
+  const { firstName, lastName, email, password, phoneNumbers } = params;
+  const userInsertData = await User.create({
+    firstName,
+    lastName,
+    email,
+    password,
   });
 
+  const insertDataForPhoneNumbers = phoneNumbers.map((phone) => ({
+    userId: userInsertData.id,
+    phoneNumber: phone.number,
+    type: phone.type,
+  }));
+
+  console.log(insertDataForPhoneNumbers);
+
+  const phoneNumberInsertedData = await UserPhoneNumber.add(
+    insertDataForPhoneNumbers
+  );
+
+  console.log(phoneNumberInsertedData);
+
   return {
+    data: params,
     message: "New user added successfully",
-    data: {
-      id: maxId + 1,
-      ...params,
-    },
   };
 }
 
 /**
  * Delete a user.
- * @param userId 
+ * @param userId
  */
 export function deleteUser(userId) {
   //security case le matra ho
@@ -85,9 +97,9 @@ export function deleteUser(userId) {
 
 /**
  * Update a user.
- * 
- * @param  userId 
- * @param  params 
+ *
+ * @param  userId
+ * @param  params
  */
 export function updateUser(userId, params) {
   const updatedJson = usersJson.map((user) => {
@@ -101,7 +113,7 @@ export function updateUser(userId, params) {
   });
   fs.writeFileSync(usersJsonPath, JSON.stringify(updatedJson, null, 2));
 
-  return{
+  return {
     message: "Updated user with id" + userId,
   };
 }
