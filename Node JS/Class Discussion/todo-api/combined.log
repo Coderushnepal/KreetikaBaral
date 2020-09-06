@@ -219,3 +219,71 @@
 {"message":"POST /users/","level":"info"}
 {"message":"POST /users/","level":"info"}
 {"message":"POST /users/","level":"info"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/2","level":"info"}
+{"message":"Fetching user information with id 2","level":"info"}
+{"message":"GET /users/2","level":"info"}
+{"message":"Fetching user information with id 2","level":"info"}
+{"message":"GET /users/3","level":"info"}
+{"message":"Fetching user information with id 3","level":"info"}
+{"message":"GET /users/4","level":"info"}
+{"message":"Fetching user information with id 4","level":"info"}
+{"message":"GET /users/5","level":"info"}
+{"message":"Fetching user information with id 5","level":"info"}
+{"message":"Cannot find the user with id 5","level":"error"}
+{"message":"GET /users/1","level":"info"}
+{"message":"Fetching user information with id 1","level":"info"}
+{"message":"GET /users/31","level":"info"}
+{"message":"Fetching user information with id 31","level":"info"}
+{"message":"Cannot find the user with id 31","level":"error"}
+{"message":"GET /users/31","level":"info"}
+{"message":"Fetching user information with id 31","level":"info"}
+{"message":"Cannot find the user with id 31","level":"error"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/32","level":"info"}
+{"message":"Fetching user information with id 32","level":"info"}
+{"message":"GET /users/31","level":"info"}
+{"message":"Fetching user information with id 31","level":"info"}
+{"message":"Cannot find the user with id 31","level":"error"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/32","level":"info"}
+{"message":"Fetching user information with id 32","level":"info"}
+{"message":"GET /users/1","level":"info"}
+{"message":"Fetching user information with id 1","level":"info"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"DELETE /users/4","level":"info"}
+{"message":"Fetching user information with 4","level":"info"}
+{"message":"DELETE /users/","level":"info"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/4","level":"info"}
+{"message":"Fetching user information with id 4","level":"info"}
+{"message":"Cannot find the user with id 4","level":"error"}
+{"message":"GET /users/","level":"info"}
+{"message":"Fetching all users","level":"info"}
+{"message":"GET /users/1","level":"info"}
+{"message":"Fetching user information with 1","level":"info"}
+{"message":"PUT /users/1","level":"info"}
+{"message":"Fetching user information with 1","level":"info"}
+{"message":"GET /users/1","level":"info"}
+{"message":"Fetching user information with 1","level":"info"}
+{"message":"PUT /users/1","level":"info"}
+{"message":"Fetching user information with 1","level":"info"}
+{"message":"GET /users/1","level":"info"}
+{"message":"Fetching user information with 1","level":"info"}
+{"message":"GET /users/1","level":"info"}
+{"message":"Fetching user information with 1","level":"info"}
+{"message":"PUT /users/2","level":"info"}
+{"message":"GET /","level":"info"}

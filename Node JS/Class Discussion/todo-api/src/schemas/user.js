@@ -1,9 +1,9 @@
 import Joi from "joi";
 
-export const CREATE_USER_SCHEMA = Joi.object().keys({
+const CREATE_USER_SCHEMA = Joi.object().keys({
   firstName: Joi.string().max(20).required(),
-  email:Joi.string().max(100).required(),
-  password:Joi.string().min(8).max(100).required(),
+  email: Joi.string().max(100).required(),
+  password: Joi.string().min(8).max(100).required(),
   lastName: Joi.string().max(20).required(),
   phoneNumbers: Joi.array()
     .required()
@@ -16,9 +16,24 @@ export const CREATE_USER_SCHEMA = Joi.object().keys({
     ),
 });
 
+const UPDATE_USER_SCHEMA = Joi.object().keys({
+  firstName: Joi.string().max(20),
+  lastName: Joi.string().max(20),
+}).min(1);
+
 export function validateUserCreation(req, res, next) {
   try {
     Joi.assert(req.body, CREATE_USER_SCHEMA);
+
+    next();
+  } catch (err) {
+    next(err);
+  }
+}
+
+export function validateUserUpdate(req, res, next) {
+  try {
+    Joi.assert(req.body, UPDATE_USER_SCHEMA);
 
     next();
   } catch (err) {
