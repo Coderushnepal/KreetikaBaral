@@ -1,8 +1,7 @@
 import HttpStatusCodes from "http-status-codes";
-
 import BadRequestError from "../utils/NotFoundError";
 import NotFoundError from "../utils/NotFoundError";
-import UnauthorizedError from "../utils/unauthorizedError";
+import UnauthorizedError from "../utils/UnauthorizedError";
 
 export default function genericErrorHandler(err, req, res, next) {
   if (err.isJoi) {

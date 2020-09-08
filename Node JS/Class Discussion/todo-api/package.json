@@ -25,12 +25,13 @@
     "rimraf": "^3.0.2",
     "snakeize": "^0.1.0",
     "winston": "^3.3.3"
+   
   },
   "devDependencies": {
+    "@babel/register": "^7.11.5",
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.5",
     "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/register": "^7.11.5"
+    "@babel/preset-env": "^7.11.5"
   }
 }
