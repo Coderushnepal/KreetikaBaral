@@ -1,6 +1,6 @@
 import knex from "knex";
 
-import { dbconfig } from "./knexfile";
+import  dbconfig  from "./knexfile";
 
 const connection = knex(dbconfig);
 
