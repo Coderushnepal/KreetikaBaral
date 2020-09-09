@@ -32,7 +32,7 @@ export async function getTodoById(userId, todoId) {
 
   logger.info(`Getting todoId ${todoId} for userId ${userId}`);
 
-  const data = await UserTodo.getAllTodos(userId, todoId);
+  const data = await UserTodo.getTodoById(userId, todoId);
 
   if (!data) {
     logger.error(`Cannot find todoId ${todoId} for userId ${userId}`);
@@ -50,9 +50,9 @@ export async function getTodoById(userId, todoId) {
 
 /**
  * Add a todo for a user.
- * 
- * @param  userId 
- * @param  todoText 
+ *
+ * @param  userId
+ * @param  todoText
  */
 export async function addTodo(userId, todoText) {
   await verifyUser(userId);
@@ -62,5 +62,25 @@ export async function addTodo(userId, todoText) {
   return {
     data,
     message: `New todo added successfully for userId ${userId}`,
+  };
+}
+
+/**
+ * Remove a todo for a user.
+ *
+ * @param  userId
+ * @param  todoId
+ */
+export async function removeTodo(userId, todoId) {
+  await verifyUser(userId);
+
+  // console.log(userId, todoId)
+
+  logger.info(`Removing todoId ${todoId} for userId ${userId}`);
+
+  await UserTodo.removeTodo(userId, todoId);
+
+  return {
+    message: `Removed todoId ${todoId} for userId ${userId}`,
   };
 }
