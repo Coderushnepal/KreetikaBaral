@@ -337,3 +337,68 @@
 {"message":"GET /users/2/todos","level":"info"}
 {"message":"Verifying if userId 2 exists","level":"info"}
 {"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"POST /users/1/todos","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Getting list of todos for userId 1","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"Verifying if userId 3 exists","level":"info"}
+{"message":"Cannot find user with id 3","level":"error"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"PUT /users/2/todos","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting todoId Prepare dinner for everyone for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"POST /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"POST /users/2/todos","level":"info"}

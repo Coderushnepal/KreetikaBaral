@@ -29,7 +29,7 @@ export async function getAllTodos(userId) {
  */
 export async function getTodoById(userId, todoId) {
   await verifyUser(userId);
-  
+
   logger.info(`Getting todoId ${todoId} for userId ${userId}`);
 
   const data = await UserTodo.getAllTodos(userId, todoId);
@@ -45,5 +45,22 @@ export async function getTodoById(userId, todoId) {
   return {
     data,
     message: `Todo details for todoId ${todoId} and userId ${userId}`,
+  };
+}
+
+/**
+ * Add a todo for a user.
+ * 
+ * @param  userId 
+ * @param  todoText 
+ */
+export async function addTodo(userId, todoText) {
+  await verifyUser(userId);
+
+  const data = await UserTodo.add(userId, todoText);
+
+  return {
+    data,
+    message: `New todo added successfully for userId ${userId}`,
   };
 }
