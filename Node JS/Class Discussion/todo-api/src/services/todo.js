@@ -42,6 +42,8 @@ export async function getTodoById(userId, todoId) {
     );
   }
 
+  console.log(data)
+
   return {
     data,
     message: `Todo details for todoId ${todoId} and userId ${userId}`,
@@ -80,5 +82,25 @@ export async function removeTodo(userId, todoId) {
 
   return {
     message: `Removed todoId ${todoId} for userId ${userId}`,
+  };
+}
+
+/**
+ * Update a todo for a user. Either update the todo text or mark it as completed.
+ *
+ * @param userId
+ * @param todoId
+ * @param updateParams
+ */
+export async function updateTodo(userId, todoId, updateParams) {
+  await verifyUser(userId);
+
+  logger.info(`Updating todoId ${todoId} for userId ${userId}`);
+
+  const data = await UserTodo.updateTodo(userId, todoId, updateParams);
+
+  return {
+    data,
+    message: `Updated todoId ${todoId} for userId ${userId}`
   };
 }

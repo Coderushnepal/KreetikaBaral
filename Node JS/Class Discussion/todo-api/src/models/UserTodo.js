@@ -40,3 +40,12 @@ export async function removeTodo(userId, todoId) {
     .update({ is_active: false })
     .where({ user_id: userId, id: todoId });
 }
+
+export async function updateTodo(userId, todoId, updateParams) {
+  const [updatedData] = await connection(table)
+    .update(snakeize(updateParams))
+    .where({ user_id: userId, id: todoId })
+    .returning('*');
+
+  return camelize(updatedData);
+}
