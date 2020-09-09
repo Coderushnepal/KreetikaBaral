@@ -1,4 +1,5 @@
 import logger from "../utils/logger";
+import { hash } from "../utils/crypt";
 import * as User from "../models/User";
 import BadRequestError from "../utils/BadRequestError";
 import NotFoundError from "../utils/NotFoundError";
@@ -18,7 +19,12 @@ export async function createUser(params) {
     );
   }
 
-  const userInsertData = await User.create(params);
+  const hashedPassword = hash(params.password);
+
+  const userInsertData = await User.create({
+    ...params,
+    password: hashedPassword,
+  });
 
   return {
     data: userInsertData,
@@ -28,8 +34,8 @@ export async function createUser(params) {
 
 /**
  * Get user by id.
- * 
- * @param  userId 
+ *
+ * @param  userId
  */
 export async function verifyUser(userId) {
   logger.info(`Verifying if userId ${userId} exists`);

@@ -722,3 +722,4 @@
 {"message":"Verifying if userId 2 exists","level":"info"}
 {"message":"Updating todoId 4 for userId 2","level":"info"}
 {"message":"PUT /users/2/todos/4","level":"info"}
+{"message":"POST /users/","level":"info"}
