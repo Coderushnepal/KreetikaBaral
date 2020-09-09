@@ -287,3 +287,53 @@
 {"message":"Fetching user information with 1","level":"info"}
 {"message":"PUT /users/2","level":"info"}
 {"message":"GET /","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Getting list of todos for userId 1","level":"info"}
+{"message":"GET /users/8/todos","level":"info"}
+{"message":"Getting list of todos for userId 8","level":"info"}
+{"message":"GET /users/8/todos","level":"info"}
+{"message":"Getting list of todos for userId 8","level":"info"}
+{"message":"GET /users/8/todos","level":"info"}
+{"message":"Getting list of todos for userId 8","level":"info"}
+{"message":"GET /users/8/todos","level":"info"}
+{"message":"Getting list of todos for userId 8","level":"info"}
+{"message":"GET /users/8/todos","level":"info"}
+{"message":"Verifying if userId 8 exists","level":"info"}
+{"message":"Cannot find user with id 8","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Cannot find user with id 1","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Cannot find user with id 1","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Cannot find user with id 1","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Cannot find user with id 1","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Cannot find user with id 1","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Cannot find user with id 1","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Cannot find user with id 1","level":"error"}
+{"message":"GET /users/1/todos","level":"info"}
+{"message":"Verifying if userId 1 exists","level":"info"}
+{"message":"Getting list of todos for userId 1","level":"info"}
+{"message":"GET /users/2/todos","level":"info"}
+{"message":"Verifying if userId 2 exists","level":"info"}
+{"message":"Getting list of todos for userId 2","level":"info"}
