@@ -74,8 +74,6 @@ export async function addTodo(userId, todoText) {
 export async function removeTodo(userId, todoId) {
   await verifyUser(userId);
 
-  // console.log(userId, todoId)
-
   logger.info(`Removing todoId ${todoId} for userId ${userId}`);
 
   await UserTodo.removeTodo(userId, todoId);
