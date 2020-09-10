@@ -3,6 +3,8 @@ import { hash, compare } from "../utils/crypt";
 import * as User from "../models/User";
 import BadRequestError from "../utils/BadRequestError";
 import NotFoundError from "../utils/NotFoundError";
+import * as UserSession from '../models/UserSession'
+import { generateToken } from "../utils/string";
 
 /**
  * Create a user.
@@ -56,6 +58,8 @@ export async function login(params) {
     throw new BadRequestError("Invalid login credentials");
   }
 
+  const token = generateToken();
+
   // const token = generateToken({
   //   id: user.id,
   //   firstName: user.firstName,
@@ -63,13 +67,14 @@ export async function login(params) {
   //   email: user.email
   // });
 
-  // await UserSession.saveToken(user.id, token);
+  await UserSession.saveToken(user.id, token);
 
-  // user.password = undefined;
+  user.password = undefined;
 
   return {
     data: {
       user,
+      token,
     },
     message: "Logged in successfully",
   };
