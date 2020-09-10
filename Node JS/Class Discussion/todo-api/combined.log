@@ -723,3 +723,17 @@
 {"message":"Updating todoId 4 for userId 2","level":"info"}
 {"message":"PUT /users/2/todos/4","level":"info"}
 {"message":"POST /users/","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"Invalid login credentials","level":"error"}
+{"message":"POST /users/login","level":"info"}
+{"message":"Invalid password credentials","level":"error"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"Invalid login credentials","level":"error"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"Invalid login credentials","level":"error"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}

@@ -1,5 +1,5 @@
 import logger from "../utils/logger";
-import { hash } from "../utils/crypt";
+import { hash, compare } from "../utils/crypt";
 import * as User from "../models/User";
 import BadRequestError from "../utils/BadRequestError";
 import NotFoundError from "../utils/NotFoundError";
@@ -29,6 +29,49 @@ export async function createUser(params) {
   return {
     data: userInsertData,
     message: "New user added successfully",
+  };
+}
+
+/**
+ * Verify email and password and login.
+ *
+ * @param params
+ */
+export async function login(params) {
+  const { email, password } = params;
+
+  const user = await User.getUserByEmail(email);
+
+  if (!user) {
+    logger.error("Invalid login credentials");
+
+    throw new BadRequestError("Invalid login credentials");
+  }
+
+  const isPasswordValid = compare(password, user.password);
+
+  if (!isPasswordValid) {
+    logger.error("Invalid login credentials");
+
+    throw new BadRequestError("Invalid login credentials");
+  }
+
+  // const token = generateToken({
+  //   id: user.id,
+  //   firstName: user.firstName,
+  //   lastName: user.lastName,
+  //   email: user.email
+  // });
+
+  // await UserSession.saveToken(user.id, token);
+
+  // user.password = undefined;
+
+  return {
+    data: {
+      user,
+    },
+    message: "Logged in successfully",
   };
 }
 
