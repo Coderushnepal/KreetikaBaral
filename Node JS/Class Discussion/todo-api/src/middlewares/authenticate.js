@@ -1,16 +1,17 @@
-import { verifyToken } from '../services/authenticate';
+import { verifyToken } from "../services/authenticate";
+
 
 export default async function authenticate(req, res, next) {
-    const userId = +req.params.userId;
+  const userId = +req.user.id;
   const token = req.headers["authorization"];
 
   console.log(token);
 
-    try {
-  await verifyToken(userId, token);
+  try {
+    await verifyToken(userId, token);
 
-  next();
-    } catch (err) {
-      next(err);
-    }
+    next();
+  } catch (err) {
+    next(err);
+  }
 }

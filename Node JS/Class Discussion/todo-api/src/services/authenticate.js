@@ -3,7 +3,9 @@ import * as UserSession from '../models/UserSession';
 import UnauthorizedError from '../utils/UnauthorizedError';
 
 export async function verifyToken(userId, token) {
-  if (!token) {
+  const extractedToken = token.split(' ')[1];
+
+  if (!extractedToken) {
     logger.error(`No token provided`);
 
     throw new UnauthorizedError(`No token provided`);
@@ -11,7 +13,7 @@ export async function verifyToken(userId, token) {
 
   const session = await UserSession.get({
     userId,
-    token,
+    token: extractedToken,
     isActive: true
   });
 

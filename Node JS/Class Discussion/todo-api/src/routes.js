@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 import authenticate from "./middlewares/authenticate";
+import jwtAuthenticate from "./middlewares/jwtAuthenticate";
 import * as endpoints from "./constants/endpoints";
 import * as userController from "./controllers/user";
 import * as todoController from "./controllers/todo";
@@ -24,21 +25,38 @@ router.post(
   userController.createUser
 );
 
-router.get(endpoints.GET_ALL_TODOS,authenticate, todoController.getAllTodos);
+router.get(
+  endpoints.GET_ALL_TODOS,
+  jwtAuthenticate,
+  authenticate,
+  todoController.getAllTodos
+);
 
-router.get(endpoints.GET_TODO_BY_ID, authenticate, todoController.getTodoById);
+router.get(
+  endpoints.GET_TODO_BY_ID,
+  jwtAuthenticate,
+  authenticate,
+  todoController.getTodoById
+);
 
 router.post(
   endpoints.ADD_TODO,
+  jwtAuthenticate,
   authenticate,
   validateAddTodo,
   todoController.addTodo
 );
 
-router.delete(endpoints.REMOVE_TODO, authenticate, todoController.removeTodo);
+router.delete(
+  endpoints.REMOVE_TODO,
+  jwtAuthenticate,
+  authenticate,
+  todoController.removeTodo
+);
 
 router.put(
   endpoints.UPDATE_TODO,
+  jwtAuthenticate,
   authenticate,
   validateUpdateTodo,
   todoController.updateTodo

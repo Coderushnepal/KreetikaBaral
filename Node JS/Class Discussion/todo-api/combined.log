@@ -831,3 +831,77 @@
 {"message":"PUT /users/3/todos/4","level":"info"}
 {"message":"Verifying if userId 3 exists","level":"info"}
 {"message":"Updating todoId 4 for userId 3","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"GET /users/login","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/login","level":"info"}
+{"message":"GET /users/1","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"Verifying if userId 3 exists","level":"info"}
+{"message":"Getting list of todos for userId 3","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"Verifying if userId 3 exists","level":"info"}
+{"message":"Getting list of todos for userId 3","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"Verifying if userId 3 exists","level":"info"}
+{"message":"Getting list of todos for userId 3","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"Verifying if userId 3 exists","level":"info"}
+{"message":"Getting list of todos for userId 3","level":"info"}
+{"message":"GET /todos","level":"info"}
+{"message":"GET /todos","level":"info"}
+{"message":"POST /users/2/todos/3","level":"info"}
+{"message":"PUT /users/2/todos/3","level":"info"}
+{"message":"PUT /login","level":"info"}
+{"message":"PUT /login","level":"info"}
+{"message":"POST /login","level":"info"}
+{"message":"GET /todos","level":"info"}
+{"message":"POST /login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"GET /users/3/todos","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"POST /users/login","level":"info"}
+{"message":"GET /users/todos","level":"info"}
+{"message":"GET /todos","level":"info"}
+{"message":"Getting list of todos for userId 3","level":"info"}
+{"message":"GET /todos/1","level":"info"}
+{"message":"Getting todoId 1 for userId 3","level":"info"}
+{"message":"Cannot find todoId 1 for userId 3","level":"error"}
+{"message":"GET /todos/1","level":"info"}
+{"message":"Getting todoId 1 for userId 3","level":"info"}
+{"message":"Cannot find todoId 1 for userId 3","level":"error"}
+{"message":"GET /todos/2","level":"info"}
+{"message":"Getting todoId 2 for userId 3","level":"info"}
+{"message":"Cannot find todoId 2 for userId 3","level":"error"}
+{"message":"GET /todos/3","level":"info"}
+{"message":"Getting todoId 3 for userId 3","level":"info"}
+{"message":"Cannot find todoId 3 for userId 3","level":"error"}
+{"message":"GET /todos/4","level":"info"}
+{"message":"Getting todoId 4 for userId 3","level":"info"}
+{"message":"GET /todos/","level":"info"}
+{"message":"Getting list of todos for userId 3","level":"info"}

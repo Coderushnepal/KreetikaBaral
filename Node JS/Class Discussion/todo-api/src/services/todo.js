@@ -1,6 +1,6 @@
 import logger from "../utils/logger";
 import * as UserTodo from "../models/UserTodo";
-import { verifyUser } from "../services/user";
+// import { verifyUser } from "../services/user";
 import NotFoundError from "../utils/NotFoundError";
 
 /**
@@ -9,7 +9,7 @@ import NotFoundError from "../utils/NotFoundError";
  * @param  userId
  */
 export async function getAllTodos(userId) {
-  await verifyUser(userId);
+  // await verifyUser(userId);
 
   logger.info(`Getting list of todos for userId ${userId}`);
 
@@ -28,7 +28,7 @@ export async function getAllTodos(userId) {
  * @param todoId
  */
 export async function getTodoById(userId, todoId) {
-  await verifyUser(userId);
+  // await verifyUser(userId);
 
   logger.info(`Getting todoId ${todoId} for userId ${userId}`);
 
@@ -57,7 +57,7 @@ export async function getTodoById(userId, todoId) {
  * @param  todoText
  */
 export async function addTodo(userId, todoText) {
-  await verifyUser(userId);
+  // await verifyUser(userId);
 
   const data = await UserTodo.add(userId, todoText);
 
@@ -74,7 +74,7 @@ export async function addTodo(userId, todoText) {
  * @param  todoId
  */
 export async function removeTodo(userId, todoId) {
-  await verifyUser(userId);
+  // await verifyUser(userId);
 
   logger.info(`Removing todoId ${todoId} for userId ${userId}`);
 
@@ -93,7 +93,7 @@ export async function removeTodo(userId, todoId) {
  * @param updateParams
  */
 export async function updateTodo(userId, todoId, updateParams) {
-  await verifyUser(userId);
+  // await verifyUser(userId);
 
   logger.info(`Updating todoId ${todoId} for userId ${userId}`);
 
